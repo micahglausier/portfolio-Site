@@ -301,7 +301,9 @@ cv-button:focus,
 /*about top text*/
 .about {
     text-align: center;
-    margin: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    
 }
 /* list on about page*/
 .about-list {
@@ -313,7 +315,41 @@ cv-button:focus,
     text-align: center;
     margin: auto;
     padding-bottom: 10px;
+    table-layout: fixed;
 }
+
+
+table {
+	display: table;
+	padding: 15px;
+	margin: 0 auto;
+	width: 90%;
+	border-collapse: separate;
+}
+
+thead {
+	height: 25px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color:#008080;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+div.contact-form {
+
+        display: block;
+        text-align: left;
+    }
+    form
+    {
+        display: inline-block;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        text-align: left;
+    }
+
 
 /* Keyframes Sun */
 /* color-change is the name selected for the animation */
