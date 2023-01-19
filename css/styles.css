@@ -121,6 +121,15 @@ body {
     padding-bottom: 2px;
 }
 
+.family-portrait {
+    float: left;
+    width: 250px;
+    margin-right: auto;
+    border-radius: 70%;
+    text-align: center;
+
+}
+
 * {
     box-sizing: border-box;
 }
@@ -286,6 +295,8 @@ cv-button:focus,
     text-align: center;
     margin: auto;
     padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 

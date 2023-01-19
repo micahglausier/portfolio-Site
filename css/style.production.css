@@ -86,7 +86,7 @@ body {
     float: left;
     width: 250px;
     margin-right: 40px;
-    border-radius: 50%;
+    border-radius: 80%;
 }
 
 .page-footer {
@@ -99,21 +99,34 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    border-top: solid;
+    border-color: #008080;
 }
 
 .profile {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 40px auto 40px auto;
 }
 
+/* contact page profile information */
 .contact-profile {
     max-width: 200px;
     margin: auto;
     border-bottom: solid;
-    border-right:#008080;
+    border-right: #008080;
     border-left: #008080;
     border-color: #008080;
     padding-bottom: 2px;
+    text-align: center;
+}
+/* picture on Contact page */
+.family-portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border-radius: 80%;
 }
 
 * {
@@ -265,13 +278,14 @@ button {
     background-color: #357b70;
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     border-radius: 3px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
+    margin-bottom: 20px;
 }
 
 cv-button:hover,
@@ -283,7 +297,6 @@ cv-button:focus,
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
 }
-
 
 /*about top text*/
 .about {
@@ -301,7 +314,6 @@ cv-button:focus,
     margin: auto;
     padding-bottom: 10px;
 }
-
 
 /* Keyframes Sun */
 /* color-change is the name selected for the animation */
@@ -390,12 +402,11 @@ cv-button:focus,
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
             animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
+/* saints color change */
 .saints-logo {
     -webkit-animation: 4s color-change infinite alternate linear;
             animation: 4s color-change infinite alternate linear;
 }
-
 
 /*
 Colors used
