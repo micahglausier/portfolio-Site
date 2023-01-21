@@ -96,8 +96,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
     border-top: solid;
     border-color: #008080;
@@ -106,8 +106,8 @@ body {
 .profile {
     max-width: 700px;
     margin: 40px auto 40px auto;
-    -webkit-animation: 1s slide-right 1 alternate linear;
-            animation: 1s slide-right 1 alternate linear;
+    -webkit-animation: 2s slide-right 1 alternate linear;
+    animation: 2s slide-right 1 alternate linear;
 }
 
 /* contact page profile information */
@@ -119,21 +119,21 @@ body {
     border-left: #008080;
     border-color: #008080;
     padding-bottom: 2px;
-    text-align: center;
 }
 /* picture on Contact page */
 .family-portrait {
     float: left;
     width: 250px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: auto;
+    margin-left: 24%;
     margin-bottom: 40px;
     border-radius: 80%;
+
 }
 
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .page-header {
@@ -148,15 +148,15 @@ body {
 
 .page-header__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
+    -ms-flex: 0 1 200px;
+    flex: 0 1 200px;
     max-height: 50px;
 }
 
 .page-header__item:last-child {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     text-align: right;
 }
 
@@ -173,26 +173,26 @@ body {
 /* animation for index*/
 @-webkit-keyframes slide-right {
     from {
-      margin-left: 100px;
-      width: 300%; 
+        margin-left: 0;
+        width: 300%;
     }
-  
+
     to {
-      margin-left: 300px;
-      width: 100%;
+        margin-left: 27%;
+        width: 100%;
     }
-  }
+}
 @keyframes slide-right {
     from {
-      margin-left: 100px;
-      width: 300%; 
+        margin-left: 0%;
+        width: 300%;
     }
-  
+
     to {
-      margin-left: 300px;
-      width: 100%;
+        margin-left: 27%;
+        width: 100%;
     }
-  }
+}
 
 /* start grid fallback */
 .grid__item {
@@ -328,10 +328,10 @@ cv-button:focus,
 /*about top text*/
 .about {
     text-align: center;
-    max-width: 800px; 
+    max-width: 800px;
     margin: 0 auto;
     -webkit-animation: 3s fadeIn 1 alternate linear;
-            animation: 3s fadeIn 1 alternate linear;
+    animation: 3s fadeIn 1 alternate linear;
 }
 /* list on about page*/
 .about-list {
@@ -347,49 +347,53 @@ cv-button:focus,
 }
 
 @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*animation for about page*/
 
-
 table {
-	display: table;
-	padding: 15px;
-	margin: 0 auto;
-	width: 90%;
-	border-collapse: separate;
+    display: table;
+    padding: 15px;
+    margin: 0 auto;
+    width: 90%;
+    border-collapse: separate;
 }
 
 thead {
-	height: 25px;
-	padding: 20px;
-	margin: 0 auto;
-	background-color:#008080;
-	font-size: 20px;
-	font-weight: 700;
-	text-align: center;
+    height: 25px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #008080;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
 }
 
 div.contact-form {
-
-        display: block;
-        text-align: left;
-    }
-    form
-    {
-        display: inline-block;
-        margin-left: 0 auto;
-        margin-right: 0 auto;
-        text-align: left;
-    }
-
+    display: block;
+    text-align: left;
+}
+form {
+    display: inline-block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: left;
+}
 
 /* Keyframes Sun */
 /* color-change is the name selected for the animation */
@@ -418,36 +422,36 @@ div.contact-form {
 
 .sun {
     -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
+    animation: 4s color-change infinite alternate linear;
 }
 
 /* keyframes front cloud */
 @-webkit-keyframes cloud-move {
     from {
         -webkit-transform: translate(0px, 50px);
-                transform: translate(0px, 50px);
+        transform: translate(0px, 50px);
     }
 
     to {
         -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
     }
 }
 @keyframes cloud-move {
     from {
         -webkit-transform: translate(0px, 50px);
-                transform: translate(0px, 50px);
+        transform: translate(0px, 50px);
     }
 
     to {
         -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
     }
 }
 
 .cloud-front {
     -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
+    animation: 30s cloud-move infinite alternate linear;
 }
 
 /* kayframes back cloud */
@@ -455,33 +459,33 @@ div.contact-form {
 @-webkit-keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
     }
     to {
         -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
     }
 }
 
 @keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
     }
     to {
         -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
     }
 }
 
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 /* saints color change */
 .saints-logo {
     -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
+    animation: 4s color-change infinite alternate linear;
 }
 
 /*
