@@ -107,28 +107,51 @@ body {
     max-width: 700px;
     margin: 40px auto 40px auto;
     -webkit-animation: 2s slide-right 1 alternate linear;
-    animation: 2s slide-right 1 alternate linear;
+    animation: 2s fadeIn 1 alternate linear;
 }
 
 /* contact page profile information */
+
+.contact-main{ 
+    display: flex;
+    justify-content: center;
+    border-left: solid #008080;
+    border-right: solid #008080;
+    
+}
 .contact-profile {
     max-width: 200px;
-    margin: auto;
+    margin-left: 50px;
     border-bottom: solid;
+    border-right: solid;
     border-right: #008080;
     border-left: #008080;
     border-color: #008080;
-    padding-bottom: 2px;
+    margin-bottom: 10px;
 }
 /* picture on Contact page */
 .family-portrait {
     float: left;
-    width: 250px;
-    margin-right: auto;
-    margin-left: 24%;
-    margin-bottom: 40px;
+    width: 300px;
+    height: 475px;
     border-radius: 80%;
+    margin-top: 25px;
 
+}
+
+div.contact-form {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    border-right: solid #008080;
+    border-left: solid #008080;
+    border-top: solid #008080;
+}
+form {
+    display: inline-block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: left;
 }
 
 * {
@@ -170,7 +193,7 @@ body {
 }
 
 
-/* animation for index*/
+/* animation for Slide In*/
 @-webkit-keyframes slide-right {
     from {
         margin-left: 0;
@@ -193,6 +216,8 @@ body {
         width: 100%;
     }
 }
+/*Add Media Query to make page stack*/
+/*Add Media Query to remove animation on smaller screens or change animation to fade in*/
 
 /* start grid fallback */
 .grid__item {
@@ -383,17 +408,6 @@ thead {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-}
-
-div.contact-form {
-    display: block;
-    text-align: left;
-}
-form {
-    display: inline-block;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    text-align: left;
 }
 
 /* Keyframes Sun */
