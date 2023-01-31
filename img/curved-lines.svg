@@ -1,44 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>About Micah Glausier</title>
-        <meta charset="utf-8">
-        <link rel="shortcut icon" href="./img/Favicon-copy.png">
-        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header class="page-header">
-            <a href="index.html"><img src="./img/Logo.png" alt="Micah's Personal logo, consists of a capitol M and a Capitol G" class="page-header__item"></a>
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
+<svg 
    version="1.1"
-   id="curved-lines"
-   class="curved-lines"
-   width="450"
-   height="450"
+   id="svg13541"
+   width="800"
+   height="800"
    viewBox="0 0 800 800"
    sodipodi:docname="black-curved-lines-publicdomainvectors.org.svg"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
@@ -140,7 +107,7 @@
              style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path13581" />
         </g>
-        <g class="outer-ring"
+        <g
            id="g13583"
            transform="translate(467.1641,501.0034)">
           <path
@@ -152,35 +119,3 @@
     </g>
   </g>
 </svg>
-<img src="img/portrait.jpg" class="profile__portrait" alt="Picture of Micah and his Wife">
-        <div class="profile">
-            <h1>Hello world!</h1>
-            <p>
-                My name is Micah Glausier. I am a <span>Web</span> Developer from New Orleans. I love problem solving and using my unique skills to help others! I also love working with teams of people who can push me to be better, so I
-                love Web Development. I love the process of seeing something that is broken, just getting off the ground, or just needs maintenance, and solving the issues that are involved. I am driven to be the best that I can be in all
-                areas of my life.
-            </p>
-        </div>
-        <!--make link look like button-->
-        <div class="code-button">
-            <a href="work.html">Check out some of my Code</a>
-        </div>
-        <br>
-        <!--make link look like button-->
-        <a href="files/Micah_Glausier_-_Web_Developer.pdf" target="_blank" download>Download My CV</a>
-        </main>
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <!--Add GitHub Logo Here-->
-                <a href="https://github.com/micahglausier" target="_blank"> <img src="./img/github-icon.svg" alt="Github"></a>
-                <!--Add LinkedIn Logo Here-->
-                <a href="https://www.linkedin.com/in/micah-glausier-22322994/" target="_blank"><img src="./img/linkedin-icon.svg" alt="LinkedIn"></a>
-            </div>
-        </footer>
-
-        <script src="js/tota11y.min.js"></script>
-    </body>
-</html>
-
-

@@ -1,4 +1,8 @@
 
+html {
+    background-image: linear-gradient(to right top, #2d545e, #264c55, #1f444c, #193c43, #12343b);
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -6,8 +10,8 @@ body {
     /* Sets the font size to 16px */
     line-height: 1.6;
     /* Sets the line-height to 1.6 */
-    background-color: #c9cac8 !important;
-    color: #36454f;
+    background-image: linear-gradient(to right top, #2d545e, #264c55, #1f444c, #193c43, #12343b);
+    color: white;
 }
 
 h1 {
@@ -29,17 +33,17 @@ h3 {
 }
 
 a {
-    color: #357b70;
+    color: black;
+    display: inline-block;
+    margin-left: .5px;
 }
 a:hover,
 a:focus {
     /* No underlining when hovering over a link */
     text-decoration: none;
+    text-align: center;
 }
-a:visited {
-    /* visited link*/
-    color: #05676e;
-}
+
 a:active {
     /*selected link*/
     color: #489c79;
@@ -51,8 +55,8 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #357b70;
-    color: white;
+    background-color: #e1b382;
+    color: black;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
@@ -70,7 +74,7 @@ button:focus {
 }
 
 .button-secondary {
-    background-color: #e0b354;
+    background-color: #e1b382;
     color: #2b2b2b;
 }
 
@@ -84,10 +88,12 @@ body {
 
 .profile__portrait {
     float: left;
-    width: 250px;
+    width: 300px;
     margin-right: 40px;
     border-radius: 80%;
-    
+    animation: 8s fadeIn 1 alternate linear;
+    margin-top: 0px;
+    margin-left: 15px; 
 }
 
 .page-footer {
@@ -100,15 +106,28 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    border-top: solid;
-    border-color: #008080;
+    background-image: transparent;
+    height: 400px;
+}
+
+.outer-ring { 
+    max-width: 300px;
+}
+
+.curved-lines {
+    float: right;
+    animation: 75s spin infinite linear;
+    margin-top: -35px;
+    
+
 }
 
 .profile {
     max-width: 800px;
     margin: 40px auto 40px auto;
     -webkit-animation: 2s slide-right 1 alternate linear;
-    animation: 2s fadeIn 1 alternate linear;
+    animation: 4s fadeIn 1 alternate linear;
+    margin-top: 35px;
 }
 
 @media screen and (max-width: 600px) {
@@ -258,7 +277,8 @@ form {
     }
 
     .grid__item {
-        background-color: lightgray;
+        background-color: #e1b382;
+        color: black;
         width: auto;
         min-height: auto;
         margin: 0;
@@ -309,13 +329,15 @@ form {
 div.code-button {
     border: none;
     display: inline-block;
+    max-width: 200px;
+
     /* takes the font from the outer container */
     font-family: inherit;
     /* style button */
-    background-color: #357b70;
-    color: white;
+    background-color: #e1b382;
+    color: black;
     text-decoration: none;
-    padding: 10px;
+    padding: 3px;
     border-radius: 3px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -328,7 +350,7 @@ div.code-button:hover,
 div.code-button:focus {
     cursor: pointer;
     opacity: 0.8;
-    background-color:#2b2b2b;
+    background-color: #c89666;
     transition: 0.4s;
 }
 
@@ -337,13 +359,12 @@ div.code-button:focus {
 button {
     /* overwrites browser defaults */
     /* resets the border */
-    border: none;
     display: inline-block;
     /* takes the font from the outer container */
     font-family: inherit;
     /* style button */
-    background-color: #357b70;
-    color: white;
+    background-color: #e1b382;
+    color: black;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -373,8 +394,8 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* style button */
-    background-color: #357b70;
-    color: white;
+    background-color: #e1b382;
+    color: black;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -535,6 +556,17 @@ thead {
     to {
         -webkit-transform: translate(100px, 48px);
         transform: translate(100px, 48px);
+    }
+}
+
+
+
+@keyframes spin { 
+    0% { 
+        transform:rotateZ(0deg);
+    } 
+    100% {
+        transform: rotateZ(-360deg)
     }
 }
 
