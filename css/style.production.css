@@ -58,7 +58,7 @@ a:active {
     width: 100%;
     padding: 20px;
     border-bottom: solid;
-    border-color: #008080;
+    border-color: #e1b382;
 }
 
 .page-header__item {
@@ -77,14 +77,43 @@ a:active {
 
 .navigation-list {
     list-style-type: none;
+    color: #e1b382;
 }
 
 .navigation-list li {
     display: inline-block;
     margin-left: 15px;
+    color: #e1b382;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+    color: #e1b382;
 }
 /* Header End */
 
+/* Footer Start */
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    background-image: transparent;
+    height: 400px;
+}
+/* Footer End */
+
+/* body */
+body {
+    background-color: #ffffff;
+}
+
+/* button */
 button {
     /* overwrites browser defaults and resets the border */
     border: none;
@@ -114,14 +143,9 @@ button:focus {
     color: #2b2b2b;
 }
 
-.navigation-list__item--active {
-    text-decoration: none;
-}
+/* button end */
 
-body {
-    background-color: #ffffff;
-}
-
+/* Home Page */
 .profile__portrait {
     display: flex;
     justify-content: left;
@@ -133,22 +157,6 @@ body {
     margin-top: 0px;
 }
 
-.page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-    background-image: transparent;
-    height: 400px;
-}
-
-
-
 .curved-lines {
     float: right;
     animation: 75s spin infinite linear;
@@ -159,9 +167,8 @@ body {
     margin-left: 2px;
     width: 1100px;
     animation: 7s slide-right 1  linear; 
-    margin-top: 50px; 
+    margin-top: 100px; 
 }
-
 
 .profile {
     max-width: 800px;
@@ -169,173 +176,6 @@ body {
     -webkit-animation: 2s slide-right 1 alternate linear;
     animation: 4s fadeIn 1 alternate linear;
     margin-top: 35px;
-}
-
-@media screen and (max-width: 900px) {
-    .profile__portrait {
-        flex-direction: column;
-        justify-content: center;
-        float: none;
-    }
-    .profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        float: none;
-        margin-left: 5px;
-        margin-right: 10px;
-    } 
-    .contact-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: auto;
-        margin-left:auto;
-    } 
-    .rough-sketch-line {
-        display: none;
-    }
-
-    .curved-lines {
-        display: none;
-    }
-}
-
-/* contact page profile information */
-
-.contact-main{ 
-    display: flex;
-    justify-content: center;
-    border-left: solid #008080;
-    border-right: solid #008080;
-    
-}
-.contact-profile {
-    max-width: 200px;
-    margin-left: 50px;
-    border-bottom: solid;
-    border-right: solid;
-    border-right: #008080;
-    border-left: #008080;
-    border-color: #008080;
-    margin-bottom: 10px;
-}
-/* picture on Contact page */
-.family-portrait {
-    float: left;
-    width: 350px;
-    height: 475px;
-    border-radius: 80%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-
-}
-
-div.contact-form {
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    border-right: solid #008080;
-    border-left: solid #008080;
-    border-top: solid #008080;
-}
-form {
-    display: inline-block;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    text-align: left;
-    margin-bottom: 25px;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-/* animation for Slide In*/
-@-webkit-keyframes slide-right {
-    from {
-        margin-left: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-    }
-}
-@keyframes slide-right {
-    from {
-        margin-left: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-    }
-}
-/*Add Media Query to make page stack*/
-/*Add Media Query to remove animation on smaller screens or change animation to fade in*/
-
-/* start grid fallback */
-.grid__item {
-    display: inline-block;
-    width: 35%;
-}
-/* end grid fallback */
-
-@supports (display: grid) {
-    .grid {
-        display: -ms-grid;
-        display: grid;
-        /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive*/
-
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-        margin: 20px;
-    }
-
-    .grid__item {
-        background-color: #e1b382;
-        color: black;
-        width: auto;
-        min-height: auto;
-        margin: 0;
-        padding: 5px;
-    }
-
-}
-
-
-@media all and (max-width: 750px) {
-    /* shared code */
-}
-
-@media all and (max-width: 500px) {
-    .grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media all and (max-width: 750px) {
-    .grid {
-        grid-gap: 10px;
-    }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-    h1 {
-        font-size: 22px;
-    }
 }
 
 div.code-button {
@@ -400,6 +240,179 @@ div.code-button:focus {
     transition: 0.4s;
 }
 
+/* media q for Home Page */
+@media screen and (max-width: 900px) {
+    .profile__portrait {
+        flex-direction: column;
+        justify-content: center;
+        float: none;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        float: none;
+        margin-left: 5px;
+        margin-right: 10px;
+    } 
+    .contact-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+        margin-left:auto;
+    } 
+    .rough-sketch-line {
+        display: none;
+    }
+
+    .curved-lines {
+        display: none;
+    }
+}
+/*ends Home Page */
+
+/* contact page profile information */
+
+.contact-main{ 
+    display: flex;
+    justify-content: left;
+    margin: 100px;
+}
+.contact-profile {
+    max-width: 200px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+/* picture on Contact page */
+.family-portrait {
+    float: left;
+    width: 350px;
+    height: 475px;
+    border-radius: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+div.contact-form {
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    border: 3px solid #c89666;
+    max-width: 215px;
+    margin: 0 auto;
+    padding: 10px;
+}
+form {
+    display: inline-block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.submit{
+    border: none;
+    display: inline-block;
+    max-width: 200px;
+
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* style button */
+    background-color: #e1b382;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+    animation: 4s fadeIn 1 alternate linear;
+    margin-left: 45px;
+}
+
+.criss-cross {
+    max-width: 100%;
+    height:auto;
+    max-height: 625px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    animation: 50s spin infinite alternate linear;
+
+}
+/* ends contact page*/
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 35%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive*/
+
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin: 20px;
+    }
+
+    .grid__item {
+        background-color: #e1b382;
+        color: black;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 5px;
+    }
+
+}
+
+/*media q for grid on work page*/
+@media all and (max-width: 750px) {
+    /* shared code */
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
 
 .button,
 button {
@@ -632,7 +645,7 @@ thead {
 }
 
 
-
+/*animation for spin*/
 @keyframes spin { 
     0% { 
         transform:rotateZ(0deg);
@@ -642,6 +655,26 @@ thead {
     }
 }
 
+
+/* animation for Slide In*/
+@-webkit-keyframes slide-right {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes slide-right {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
 
 
 /*
