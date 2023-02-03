@@ -240,6 +240,24 @@ div.code-button:focus {
     transition: 0.4s;
 }
 
+.register-form {
+  display: inline-block;
+  min-width: 75px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  text-align: center;
+}
+
+.input-wrapper {
+    margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
+
 /* media q for Home Page */
 @media screen and (max-width: 900px) {
     .profile__portrait {
