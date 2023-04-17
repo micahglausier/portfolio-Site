@@ -1,0 +1,52 @@
+/* fade index photo gallery*/
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #E7ECEF; }
+  }
+
+  /*fade in 0-100 opacity*/
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* shake */
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  /* slide across screen */
+
+  @keyframes slide {
+    0% { left: -100%; }
+    35% { left: 50%; }
+    65% { left: 50%; }
+    100% { left: 110%; }
+  }
+  
