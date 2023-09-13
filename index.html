@@ -1,133 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Micah's Portfolio</title>
-    <link rel="shortcut icon" href="./img/Favicon-copy.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Micah Glausier</title>
 
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comforter&family=Lato&family=Permanent+Marker&family=Righteous&family=Tilt+Warp&display=swap" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- style  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" content="Portfolio for Micah Glausier" />
+        <meta name="keywords" content="Personal, Website, Portfolio" />
+        <meta name="author" content="Micah Glausier" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-</head>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-<body>
-    <header>
-        <div class="header" id="header">
-            <!--Logo-->
-            <a href="index.html"><img src="./img/Logo.png" alt="Micah's Personal logo, consists of a capitol M and a Capitol G" class="logo"></a>
-            <!--Navigation Menu-->
-            <div id="sideNav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="work.html">WORK</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+        <!-- PRE LOADER -->
+        <div class="preloader">
+            <div class="spinner">
+                <span class="spinner-rotate"></span>
+            </div>
+        </div>
+
+        <!-- NAVIGATION SECTION -->
+        <div class="navbar custom-navbar navbar-fixed-top" role="nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Micah Glausier.</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="smoothScroll" href="#home">Home</a></li>
+                        <li><a class="smoothScroll" href="#about">About Micah</a></li>
+                        <li><a class="smoothScroll" href="#work">My Works</a></li>
+                        <li><a class="smoothScroll" href="#contact">Contact</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div id="menuBtn">
-                <img src="https://i.postimg.cc/j5RRCtb2/menu.png" alt="menu icon" id="menu">
-            </div>
-        </div>
-    </header>
-    <div class="index-main">
-        <div class="index-flex-container">
-            <div class="index-photo">
-                <img src="img/portrait.jpg" class="index-photo" alt="picture of Micah and his wife">
-            </div>
-            <div class="index-title">
-                <h1 class="index-title-text">Micah Glausier</h1>
-                <h3 class="index-sub-title-text">Full Stack Web Developer</h3>
-                <div class="index-paragraph">
-                    <p>My name is Micah, I am a <span>Web Developer</span> from New Orleans. For more information about me or to see some of my work, click the links below. Thanks for stopping by!!</p>
-                </div>
-                <div class="index-buttons">
-                    <a href="work.html" type: button class="index-work-button">See My Work</a>
-                    <a href="about.html" type: button class="index-about-button">About Me</a>
                 </div>
             </div>
         </div>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="img/img1.jpg" class="familybeach" alt="micah and family at beach">
-                <div class="text">Glausier Family at the Beach</div>
+        <!-- HOME SECTION -->
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-2 col-sm-3">
+                        <img src="images/Micah-Headshot.png" class="wow fadeInUp img-responsive img-circle" data-wow-delay="0.2s" alt="about image" />
+                    </div>
+
+                    <div class="col-md-8 col-sm-8">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hey there, My name is Micah Glausier, and I'm a Full Stack Web Developer in New Orleans, La.</h1>
+                        <a href="files/Micah_Glausier_Resume (2).pdf" class="wow fadeInUp btn btn-default section-btn" data-wow-delay="1s">Download Resume</a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="img/img2.jpg" class="micahandkarol" alt="micahs 3 kids">
-                <div class="text">Glausier Kids</div>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="about-thumb">
+                            <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
+                                <h2>My Story</h2>
+                                <p><strong>Micah Glausier - Full Stack Web Developer</strong></p>
+                            </div>
+                            <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                <p>
+                                    I am deeply passionate about problem-solving and utilizing my unique skill set to assist others. My affinity for collaborative teamwork, where I can continuously learn and grow, has drawn me towards the
+                                    field of Web Development. I find immense satisfaction in the process of identifying and resolving issues within projects, whether they are in their infancy, require maintenance, or are in a state of
+                                    disrepair. This drive to excel extends to all facets of my life, as I strive to serve as a powerful source of inspiration for my children and those in my circle. My career journey initially led me into
+                                    the realm of 501c3 organizations, where I spent a fulfilling 12 years. During this time, I delved into coding as a personal pursuit and quickly developed a profound affection for it. Currently, I am
+                                    immersed in the Full Stack Program at CareerFoundry, and I take immense pride in the portfolio I've constructed thus far, my unwavering work ethic, and the unwavering commitment I've always displayed in
+                                    my efforts to assist others to the best of my abilities.
+                                </p>
+                            </div>
+                            <ul class="social-icon">
+                                <li class="wow fadeInLeft" data-wow-delay="1s"><a href="https://twitter.com/MicahGlausier" class="fa fa-twitter"></a></li>
+                                <li class="wow fadeInUp" data-wow-delay="1.2s"><a href="https://www.linkedin.com/in/micah-glausier-22322994/" class="fa fa-linkedin"></a></li>
+                                <li class="wow fadeInRight" data-wow-delay="1.4s"><a href="https://www.instagram.com/micahg35/" class="fa fa-instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <h2>On Instagram</h2>
+                        </div>
+
+                        <div class="wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="https://www.instagram.com/p/Cgu-1suLsoVywA4IH6HKTLYrPE52-GYB4hw4MU0/">
+                                <img src="images/instagram-image1.jpg" class="img-responsive" alt="instagram image" />
+                            </a>
+
+                            <a href="https://www.instagram.com/p/CTVaMVaBI63UU6RbG3y6Mx-hmQz9vIGSVxvvOs0/">
+                                <img src="images/instagram-image2.jpg" class="img-responsive" alt="instagram image" />
+                            </a>
+
+                            <a href="https://www.instagram.com/p/CU0EiWALq_F9bkSFQIrqHgVvSIaKsVUQZpV2480/">
+                                <img src="images/instagram-image3.jpg" class="img-responsive" alt="instagram image" />
+                            </a>
+
+                            <a href="https://www.instagram.com/p/CULzEhMrvvLKKNwvCUI6bCUMFD1K6gzpJpLnlM0/">
+                                <img src="images/instagram-image4.jpg" class="img-responsive" alt="instagram image" />
+                            </a>
+
+                            <a href="https://www.instagram.com/p/CX6jcctrNOEQVJEi9_ZW_okVIYS2bMaVF85QrI0/">
+                                <img src="images/instagram-image5.jpg" class="img-responsive" alt="instagram image" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="img/img3.jpg" class="boys" alt="micah and his family">
-                <div class="text">Glausier Family at Thanksgiving 2022</div>
+        <!-- SKILL SECTION -->
+        <section id="skill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                            <h1>Skills</h1>
+                            <h3>Personal</h3>
+                            <ul>
+                                <li>Works well with Team</li>
+                                <li>Hard Worker</li>
+                                <li>Goal Oriented</li>
+                                <li>Multi-Tasking</li>
+                                <li>Organization</li>
+                                <li>Communication</li>
+                                <li>Attention to Detail</li>
+                                <li>Empathy</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-offset-1 col-md-6 col-sm-6">
+                        <div class="skill-thumb">
+                            <div class="wow fadeInUp" data-wow-delay="1s">
+                                <h3>Frontend Development</h3>
+                                <span class="pull-right"></span>
+                                <ul class="skill-items">
+                                    <li>React</li>
+                                    <li>React-Redux</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML5, CSS</li>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap, React Bootstrap</li>
+                                </ul>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="1s">
+                                <h3>Backend Development</h3>
+                                <span class="pull-right"></span>
+                                <ul class="skill-items">
+                                    <li>RESTful APIs</li>
+                                    <li>JSON, AJAX</li>
+                                    <li>MongoDB, SQL, PostgreSQL</li>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                    <li>CORS, Passport</li>
+                                </ul>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="1s">
+                                <h3>Testing</h3>
+                                <span class="pull-right"></span>
+                                <ul class="skill-items">
+                                    <li>Test-Driven Development</li>
+                                    <li>Behavior-Driven Development</li>
+                                    <li>React Testing Library</li>
+                                    <li>Jest-Cucumber</li>
+                                    <li>Puppeteer</li>
+                                    <li>Postman</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="mySlides fade">
-                <div class="numbertext">4/ 4</div>
-                <img src="img/img4.jpg" class="band" alt="the band karolina">
-                <div class="text">The Band Karolina</div>
+        <!-- WORK SECTION -->
+        <section id="work">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                            <h2>Projects</h2>
+                            <p>Check out some of my projects</p>
+                        </div>
+                    </div>
+
+                    <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                        <!-- WORK THUMB -->
+                        <div class="work-thumb">
+                            <a href="images/work-1.jpg" class="image-popup">
+                                <img src="images/work-1.jpg" class="img-responsive" alt="Work" />
+                            </a>
+                        </div>
+                        <h4>Meet App</h4>
+                        <a class="btn" href="https://micahglausier.github.io/meet/">
+                            Live
+                        </a>
+                        <a class="btn" href="https://github.com/micahglausier/meet">
+                            Code
+                        </a>
+                        <p>
+                            The Meet App represents a serverless, progressive web application (PWA) that has been constructed using React and embraces test-driven development (TDD) as well as behavior-driven development (BDD) methodologies.
+                        </p>
+                        <ul>
+                            <li>React</li>
+                            <li>React Testing Library</li>
+                            <li>AWS Lambda</li>
+                            <li>Recharts</li>
+                            <li>OAuth2</li>
+                            <li>External API</li>
+                            <li>Jest-Cucumber</li>
+                            <li>Puppeteer</li>
+                            <li>Gherkin</li>
+                        </ul>
+                    </div>
+
+                    <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.6s">
+                        <!-- WORK THUMB -->
+                        <div class="work-thumb">
+                            <a href="images/work-2.jpg" class="image-popup">
+                                <img src="images/work-2.jpg" class="img-responsive" alt="Work" />
+                            </a>
+                        </div>
+                        <h4>PokeDex</h4>
+                        <a class="btn" href="https://micahglausier.github.io/Pokedex-app/">
+                            Live
+                        </a>
+                        <a class="btn" href="https://github.com/micahglausier/Pokedex-app">
+                            Code
+                        </a>
+                        <p>A compact web application utilizing HTML, CSS, and JavaScript to fetch data from an external API.</p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>External API</li>
+                        </ul>
+                    </div>
+                    <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.6s">
+                        <!-- WORK THUMB -->
+                        <div class="work-thumb">
+                            <a href="images/work-3.jpg" class="image-popup">
+                                <img src="images/work-3.jpg" class="img-responsive" alt="Work" />
+                            </a>
+                        </div>
+                        <h4>FavMov App</h4>
+                        <a class="btn" href="https://micahfavmov.netlify.app/">
+                            Live
+                        </a>
+                        <a class="btn" href="https://github.com/micahglausier/myFlix-client">
+                            Code Client Side
+                        </a>
+                        <a class="btn" href="https://github.com/micahglausier/myFlix-app">
+                            Code App Side
+                        </a>
+                        <p>
+                            FavMov was constructed with React, Redux, and React Bootstrap, providing users with the ability to discover and monitor their favorite movies. Additionally, FavMov features the FavMov API, which serves as the
+                            server-side component of this movie web application. The final implementation, based on Node.js and Express, incorporates a RESTful API connecting to an online MongoDB database.
+                        </p>
+                        <ul>
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>React Bootstrap</li>
+                            <li>React Router</li>
+                            <li>React Dom</li>
+                            <li>React-Animated-Heart</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Morgan</li>
+                            <li>Express Validator</li>
+                            <li>JSON Web Tokens</li>
+                            <li>Mongoose</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
 
-        <!-- The dots/circles -->
-        <div>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-        <div class="car">
-            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg width="100px" height="100px" fill="#E7ECEF" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16,6l3,4h2c1.11,0,2,0.89,2,2v3h-2c0,1.66-1.34,3-3,3s-3-1.34-3-3H9c0,1.66-1.34,3-3,3s-3-1.34-3-3H1v-3c0-1.11,0.89-2,2-2
-            l3-4H16 M10.5,7.5H6.75L4.86,10h5.64V7.5 M12,7.5V10h5.14l-1.89-2.5H12 M6,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5
-            s1.5-0.67,1.5-1.5S6.83,13.5,6,13.5 M18,13.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S18.83,13.5,18,13.5z" />
-                <rect fill="none" width="24" height="24" />
-            </svg>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Find me on:</p>
-        </div>
-        <div class="footer-social-links">
-            <a href="https://www.instagram.com/micahg35/?hl=en"><img src="img/instagram_icon.png" alt="instagram logo" class="social-logo"></a>
-            <a href="https://github.com/micahglausier"><img src="img/github_icon.png" alt="github logo" class="social-logo"></a>
-            <a href="https://www.linkedin.com/in/micah-glausier-22322994/"><img src="img/linkedin_icon.png" alt="linkedin logo" class="social-logo"></a>
-            <a href="https://www.facebook.com/theglausiers"><img src="img/facebook_icon.png" alt="facebook logo" class="social-logo"></a>
-        </div>
-    </footer>
+                    <div class="col-md-12 col-sm-12">
+                        <!-- CONTACT FORM HERE -->
+                        <div class="wow fadeInUp" data-wow-delay="0.6s">
+                            <form id="contact-form">
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="text" class="form-control" name="name" placeholder="Name" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" />
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-md-offset-9 col-md-3 col-sm-offset-3 col-sm-6">
+                                    <button id="submit" type="submit" class="form-control" name="submit">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script src="js/tota11y.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/slideshow.js"></script>
-
-</body>
-
+        <!-- SCRIPTS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
